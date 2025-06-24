@@ -206,3 +206,64 @@ export async function getOrderDetailsController(request,response){
         })
     }
 }
+
+// ADMIN: Get all orders
+export async function getAllOrdersController(request, response) {
+    try {
+        const orders = await OrderModel.find({})
+            .sort({ createdAt: -1 })
+            .populate('delivery_address')
+            .populate('userId', 'name email');
+        return response.json({
+            message: "All orders fetched successfully",
+            data: orders,
+            error: false,
+            success: true
+        });
+    } catch (error) {
+        return response.status(500).json({
+            message: error.message || error,
+            error: true,
+            success: false
+        });
+    }
+}
+
+// ADMIN: Update order status
+export async function updateOrderStatusController(request, response) {
+    try {
+        const { orderId } = request.params;
+        const { status } = request.body;
+        if (!['Pending', 'Shipped', 'Delivered', 'Rejected'].includes(status)) {
+            return response.status(400).json({
+                message: "Invalid status value",
+                error: true,
+                success: false
+            });
+        }
+        const updatedOrder = await OrderModel.findByIdAndUpdate(
+            orderId,
+            { status },
+            { new: true }
+        );
+        if (!updatedOrder) {
+            return response.status(404).json({
+                message: "Order not found",
+                error: true,
+                success: false
+            });
+        }
+        return response.json({
+            message: "Order status updated successfully",
+            data: updatedOrder,
+            error: false,
+            success: true
+        });
+    } catch (error) {
+        return response.status(500).json({
+            message: error.message || error,
+            error: true,
+            success: false
+        });
+    }
+}

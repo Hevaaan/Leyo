@@ -152,7 +152,15 @@ const SummaryApi = {
     getOrderItems : {
         url : '/api/order/order-list',
         method : 'get'
-    }
+    },
+    getAllOrders: {
+        url: '/api/order/all',
+        method: 'get'
+    },
+    updateOrderStatus: (orderId) => ({
+        url: `/api/order/update-status/${orderId}`,
+        method: 'patch'
+    })
 }
 
 export default SummaryApi
