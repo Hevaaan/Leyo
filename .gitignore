@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Build output
+build/
+dist/
+
+# Environment variables
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite/React
+*.local
+
+# Coverage
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS generated files
+*.swp
+
+# Misc
+*.log 
